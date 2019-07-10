@@ -7,7 +7,7 @@ const Main = props => {
     mainText2,
     mainText3,
     mainText4,
-    mainImages,
+    mainImages = [],
     mainQuote,
     classes,
   } = props
@@ -21,19 +21,31 @@ const Main = props => {
       {" "}
       <div className={classes.mainTextContainer}>
         <h2 className={classes.mainTexts}>{mainText}</h2>
-        <h2 className={classes.mainTexts2}>{mainText2}</h2>
-        <h2 className={classes.mainTexts3}>{mainText3}</h2>
-        <h2 className={classes.mainTexts4}>{mainText4}</h2>
+        <a className={classes.mainTexts2} href="/delivery">
+          <h2>{mainText2}</h2>
+        </a>
+        <a className={classes.mainTexts3} href="/installation">
+          <h2>{mainText3}</h2>
+        </a>
+        <a className={classes.mainTexts4} href="/relocation">
+          <h2>{mainText4}</h2>
+        </a>
       </div>
       <div className={classes.imageContainer}>
         <div className={classes.delivery}>
-          <img src={require("../delivery2.png")} />
+          <a href="/delivery">
+            <img src={require("../delivery3.png")} />
+          </a>
         </div>{" "}
         <div className={classes.installation}>
-          <img src={require("../installation2.png")} />
+          <a href="/installation">
+            <img src={require("../installation5.png")} />
+          </a>
         </div>{" "}
         <div className={classes.relocation}>
-          <img src={require("../location4.png")} />
+          <a href="/relocation">
+            <img src={require("../relocation2.png")} />
+          </a>
         </div>
       </div>{" "}
       <div className={classes.buttonContainer}>
@@ -90,28 +102,39 @@ const styles = {
     fontWeight: "300",
   },
   mainTexts2: {
-    fontFamily: "Dosis , sans-serif",
-    fontSize: "3rem",
-    textAlign: "center",
+    "& h2": {
+      fontFamily: "Dosis , sans-serif",
+      fontSize: "3rem",
+      textAlign: "center",
+      color: "white",
+      fontWeight: "300",
+    },
     gridArea: "deliverText",
-    color: "white",
-    fontWeight: "300",
+    textDecoration: "none",
   },
   mainTexts3: {
-    fontFamily: "Dosis , sans-serif",
-    fontSize: "3rem",
-    textAlign: "center",
     gridArea: "installText",
-    color: "white",
-    fontWeight: "300",
+    textDecoration: "none",
+
+    "& h2": {
+      fontFamily: "Dosis , sans-serif",
+      fontSize: "3rem",
+      textAlign: "center",
+      color: "white",
+      fontWeight: "300",
+    },
   },
   mainTexts4: {
-    fontFamily: "Dosis , sans-serif",
-    fontSize: "3rem",
-    textAlign: "center",
     gridArea: "relocateText",
-    color: "white",
-    fontWeight: "300",
+    textDecoration: "none",
+    "& h2": {
+      fontFamily: "Dosis , sans-serif",
+      fontSize: "3rem",
+      textAlign: "center",
+      gridArea: "relocateText",
+      color: "white",
+      fontWeight: "300",
+    },
   },
   imageContainer: {
     gridArea: "mainImages",
@@ -130,22 +153,18 @@ const styles = {
     gridArea: "mainImages",
   },
   delivery: {
-    gridArea: "delivery",
     "& img": {
-      width: "150px",
-      marginTop: "-20px",
+      gridArea: "delivery",
     },
   },
   installation: {
-    gridArea: "installation",
     "& img": {
-      width: "100px",
+      gridArea: "installation",
     },
   },
   relocation: {
-    gridArea: "relocation",
     "& img": {
-      width: "80px",
+      gridArea: "relocation",
     },
   },
   buttonContainer: {

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import injectSheet from "react-jss"
 
-class Forms extends Component {
+class ContactForms extends Component {
   state = {
     firstName: "",
     lastName: "",
@@ -11,7 +10,7 @@ class Forms extends Component {
   }
   render() {
     return (
-      <div className={this.props.classes.formsContainer}>
+      <div>
         <form>
           <input
             onChange={e => this.oninputchange(e, "firstName")}
@@ -50,9 +49,4 @@ class Forms extends Component {
     console.log(this.state)
   }
 }
-const styles = {
-  formsContainer: {
-    border: "5px solid black",
-  },
-}
-export default injectSheet(styles)(Forms)
+export default ContactForms

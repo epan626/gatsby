@@ -1,6 +1,6 @@
 import React from "react"
 import injectSheet from "react-jss"
-
+import { Links } from "gatsby"
 const Nav = props => {
   const { navItems = [], header, classes } = props
   let items = []
@@ -21,9 +21,9 @@ const Nav = props => {
   return (
     <nav className={classes.navBar}>
       {" "}
-      <a href="https://tender-sinoussi-cbe15f.netlify.com/">
+      <Link to="/">
         <h1 className={classes.headerItem}>{header}</h1>
-      </a>{" "}
+      </Link>{" "}
       <div className={classes.navItems}>{items}</div>{" "}
     </nav>
   )

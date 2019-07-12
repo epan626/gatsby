@@ -1,7 +1,7 @@
 import React from "react"
 import injectSheet from "react-jss"
-import RelocationContent from "./relocationContent"
-import Nav from "./Nav"
+import RelocationContent from "../relocationContent"
+import Nav from "../Nav"
 
 export default () => (
   <div>

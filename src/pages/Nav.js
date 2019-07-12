@@ -21,7 +21,7 @@ const Nav = props => {
   return (
     <nav className={classes.navBar}>
       {" "}
-      <a href="/">
+      <a href="https://tender-sinoussi-cbe15f.netlify.com/">
         <h1 className={classes.headerItem}>{header}</h1>
       </a>{" "}
       <div className={classes.navItems}>{items}</div>{" "}

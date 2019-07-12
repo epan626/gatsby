@@ -10,7 +10,7 @@ export default () => (
       navItems={["Delivery", "Installation", "Relocation", "Contact us"]}
     />
     <DeliveryContent
-      deliveryHeader={"Delivery"}
+      deliveryHeader={"DelEEEEivery"}
       deliveryText={
         "We delivery fitness eQQquipments to homes and businesses throughout Southern California. Our Professional drivers are reliable and always on time. We are discrete and we honor your privacy."
       }

@@ -13,7 +13,7 @@ const Nav = props => {
     }
 
     items.push(
-      <Link to="https://tender-sinoussi-cbe15f.netlify.com/"+{navItem} key={navItems[x]}>
+      <Link to="./"+{navItem} key={navItems[x]}>
         {navItems[x]}
       </Link>
     )

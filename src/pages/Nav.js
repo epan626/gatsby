@@ -13,7 +13,7 @@ const Nav = props => {
     }
 
     items.push(
-      <Link to={navItem} key={navItems[x]}>
+      <Link to="./"+{navItem} key={navItems[x]}>
         {navItems[x]}
       </Link>
     )

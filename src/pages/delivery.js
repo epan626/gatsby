@@ -12,7 +12,7 @@ export default () => (
     <DeliveryContent
       deliveryHeader={"Delivery"}
       deliveryText={
-        "We delivery fitness equipments to homes and businesses throughout Southern California. Our Professional drivers are reliable and always on time. We are discrete and we honor your privacy."
+        "We delivery fitness eQQquipments to homes and businesses throughout Southern California. Our Professional drivers are reliable and always on time. We are discrete and we honor your privacy."
       }
       deliveryQuote={"Request a Quote"}
     />{" "}

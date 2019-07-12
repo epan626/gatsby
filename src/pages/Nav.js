@@ -4,7 +4,7 @@ import { Links } from "gatsby"
 const Nav = props => {
   const { navItems = [], header, classes } = props
   let items = []
-  let navItem = []
+  let navItem = ""
   for (let x = 0; x < navItems.length; x++) {
     if (navItems[x] == "Contact us") {
       navItem = "contact"
@@ -13,7 +13,7 @@ const Nav = props => {
     }
 
     items.push(
-      <Link to="./"+{navItem} key={navItems[x]}>
+      <Link to="https://tender-sinoussi-cbe15f.netlify.com/"+{navItem} key={navItems[x]}>
         {navItems[x]}
       </Link>
     )

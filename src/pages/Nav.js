@@ -4,7 +4,7 @@ import { Links } from "gatsby"
 const Nav = props => {
   const { navItems = [], header, classes } = props
   let items = []
-  let navItem
+  let navItem = []
   for (let x = 0; x < navItems.length; x++) {
     if (navItems[x] == "Contact us") {
       navItem = "contact"
@@ -13,9 +13,9 @@ const Nav = props => {
     }
 
     items.push(
-      <a href={navItem} key={navItems[x]}>
+      <Link to={navItem} key={navItems[x]}>
         {navItems[x]}
-      </a>
+      </Link>
     )
   }
   return (

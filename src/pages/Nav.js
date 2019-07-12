@@ -1,6 +1,6 @@
 import React from "react"
 import injectSheet from "react-jss"
-import { Links } from "gatsby"
+import { Link } from "gatsby"
 const Nav = props => {
   const { navItems = [], header, classes } = props
   let items = []
@@ -13,7 +13,7 @@ const Nav = props => {
     }
 
     items.push(
-      <Link to="./"{navItem} key={navItems[x]}>
+      <Link to={navItem} key={navItems[x]}>
         {navItems[x]}
       </Link>
     )
